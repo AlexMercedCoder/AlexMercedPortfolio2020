@@ -31822,6 +31822,27 @@ var BigCard = function BigCard(props) {
 };
 
 exports.BigCard = BigCard;
+},{"react":"../node_modules/react/index.js"}],"components/smallcard.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SmallCard = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var SmallCard = function SmallCard(props) {
+  return React.createElement("div", {
+    className: "smallcard " + props.theClass
+  }, props.children);
+};
+
+exports.SmallCard = SmallCard;
 },{"react":"../node_modules/react/index.js"}],"data.js":[function(require,module,exports) {
 "use strict";
 
@@ -31888,25 +31909,30 @@ var projects = [{
   live: 'https://alexmercedcoder.github.io/petadoptionapp/',
   title: 'Pet Adoption App'
 }, {
-  image: 'http://alexmercedcoder.com/pet.jpg',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: 'http://alexmercedcoder.com/calc.png',
+  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  live: 'https://optimistic-lamarr-1dc751.netlify.com/',
+  title: 'Calculator'
 }, {
-  image: 'https://i.imgur.com/vWCc9ot.png',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: 'http://alexmercedcoder.com/todo.png',
+  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  live: 'https://xenodochial-beaver-d27eca.netlify.com/',
+  title: 'Todo Lists'
 }, {
-  image: 'https://i.imgur.com/vWCc9ot.png',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: 'http://alexmercedcoder.com/bill.jpg',
+  github: 'https://stoic-stonebraker-80dd15.netlify.com/',
+  live: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  title: 'Bill & Ted TicTacToe'
 }, {
-  image: 'https://i.imgur.com/vWCc9ot.png',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: 'http://alexmercedcoder.com/space.jpg',
+  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  live: 'https://dazzling-einstein-0e4817.netlify.com/',
+  title: 'Space Battle'
+}, {
+  image: 'http://alexmercedcoder.com/grave.jpg',
+  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  live: 'https://vibrant-franklin-2cd867.netlify.com/',
+  title: 'Graveyard Landscaper'
 }];
 exports.projects = projects;
 },{}],"app.tsx":[function(require,module,exports) {
@@ -31923,6 +31949,8 @@ var _title = require("./components/title");
 var _row = require("./components/row");
 
 var _bigcard = require("./components/bigcard");
+
+var _smallcard = require("./components/smallcard");
 
 var _data = require("./data");
 
@@ -31949,11 +31977,21 @@ var App = function App() {
     href: "https://sites.google.com/view/ambootcampprojects/home"
   }, React.createElement("h3", null, "Bootcamp Project Gallery")))), React.createElement(_row.Row, {
     theClass: 'paragraph'
-  }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")));
+  }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")), React.createElement(_row.Row, null, _data.projects.map(function (proj) {
+    return React.createElement(_smallcard.SmallCard, {
+      theClass: "project"
+    }, React.createElement("header", null, React.createElement("img", {
+      src: proj.image
+    })), React.createElement("div", null, proj.title), React.createElement("footer", null, React.createElement("div", null, React.createElement("a", {
+      href: proj.live
+    }, "APP")), React.createElement("div", null, React.createElement("a", {
+      href: proj.github
+    }, "Github"))));
+  })));
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./data":"data.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./components/smallcard":"components/smallcard.tsx","./data":"data.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

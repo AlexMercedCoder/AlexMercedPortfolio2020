@@ -73,27 +73,33 @@ export const projects = [
         title: 'Pet Adoption App'
     },
     {
-        image: 'http://alexmercedcoder.com/pet.jpg',
-        github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-        live: 'https://main.devnursery.com/',
-        title: 'devNursery'
+        image: 'http://alexmercedcoder.com/calc.png',
+        github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+        live: 'https://optimistic-lamarr-1dc751.netlify.com/',
+        title: 'Calculator'
     },
     {
-        image: 'https://i.imgur.com/vWCc9ot.png',
-        github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-        live: 'https://main.devnursery.com/',
-        title: 'devNursery'
+        image: 'http://alexmercedcoder.com/todo.png',
+        github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+        live: 'https://xenodochial-beaver-d27eca.netlify.com/',
+        title: 'Todo Lists'
     },
     {
-        image: 'https://i.imgur.com/vWCc9ot.png',
-        github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-        live: 'https://main.devnursery.com/',
-        title: 'devNursery'
+        image: 'http://alexmercedcoder.com/bill.jpg',
+        github: 'https://stoic-stonebraker-80dd15.netlify.com/',
+        live: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+        title: 'Bill & Ted TicTacToe'
     },
     {
-        image: 'https://i.imgur.com/vWCc9ot.png',
-        github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-        live: 'https://main.devnursery.com/',
-        title: 'devNursery'
+        image: 'http://alexmercedcoder.com/space.jpg',
+        github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+        live: 'https://dazzling-einstein-0e4817.netlify.com/',
+        title: 'Space Battle'
+    },
+    {
+        image: 'http://alexmercedcoder.com/grave.jpg',
+        github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+        live: 'https://vibrant-franklin-2cd867.netlify.com/',
+        title: 'Graveyard Landscaper'
     },
 ]

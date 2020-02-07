@@ -17,9 +17,15 @@ const App:React.FC = () => {
         <Navi menu={menu} />
         <Title/>
 
+
+
+
         <Row theClass='paragraph'>
             <p>Alex Merced is a developer with a focus on full stack web development with a focus on <span>React, Typescript, GraphQL, Apollo, Svelte, and StencilJS.</span></p>
         </Row>
+
+
+
 
         <Row>
             <BigCard>
@@ -41,8 +47,29 @@ const App:React.FC = () => {
             </BigCard>
         </Row>
 
+
+
+
         <Row theClass='paragraph'>
             <p>Below are some of Alex Merceds projects, to contact Alex email <span>Alex@AlexMerced.dev</span>.</p>
+        </Row>
+
+
+
+
+        <Row>
+            {projects.map(proj => (
+                <SmallCard theClass="project">
+                    <header><img src={proj.image}/></header>
+                    <div>{proj.title}</div>
+                    <footer>
+                        <div><a href={proj.live}>APP</a></div>
+                        <div><a href={proj.github}>Github</a></div>
+                    </footer>
+
+
+                </SmallCard>
+            ))}
         </Row>
         </>
     )
