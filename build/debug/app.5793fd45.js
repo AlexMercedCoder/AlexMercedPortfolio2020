@@ -31730,23 +31730,126 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"app.tsx":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/navi.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Navi = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var Navi = function Navi(props) {
+  return React.createElement("div", {
+    className: "navigation"
+  }, props.menu.map(function (item) {
+    return React.createElement("div", {
+      key: item.url
+    }, React.createElement("a", {
+      href: item.url
+    }, item.label));
+  }));
+};
+
+exports.Navi = Navi;
+},{"react":"../node_modules/react/index.js"}],"components/title.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Title = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var Title = function Title(props) {
+  return React.createElement(React.Fragment, null, React.createElement("hr", null), React.createElement("h1", {
+    className: "title"
+  }, React.createElement("span", null, "Alex"), " Merced"), React.createElement("h1", {
+    className: "subtitle"
+  }, " Dev", React.createElement("span", null, "eloper")));
+};
+
+exports.Title = Title;
+},{"react":"../node_modules/react/index.js"}],"components/row.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Row = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var Row = function Row(props) {
+  return React.createElement("div", {
+    className: "row " + props.theClass
+  }, props.children);
+};
+
+exports.Row = Row;
+},{"react":"../node_modules/react/index.js"}],"app.tsx":[function(require,module,exports) {
 "use strict";
 
 var React = _interopRequireWildcard(require("react"));
 
 var ReactDOM = _interopRequireWildcard(require("react-dom"));
 
+var _navi = require("./components/navi");
+
+var _title = require("./components/title");
+
+var _row = require("./components/row");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var App = function App() {
-  return React.createElement("h1", null, "Hello World");
+  var menu = [{
+    label: 'Youtube',
+    url: 'https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ'
+  }, {
+    label: 'GitHub',
+    url: 'https://github.com/alexmercedcoder'
+  }, {
+    label: 'LinkedIn',
+    url: 'http://www.linkedin.com/in/alexmerced'
+  }, {
+    label: 'Podcast',
+    url: 'https://open.spotify.com/show/1kMcquypdIElTu4Nu98XPM'
+  }, {
+    label: 'Slack',
+    url: 'https://join.slack.com/t/amwebdev/shared_invite/enQtNzc4NDA3MDU3MDE0LTZjNjIyZmQ3MzA5Y2Q3MWUwZjk3NTIyYjliOThlMWFjNTFkYWM1OGUxN2Y3NGExNGVhOGIzZTg0YTJjZTk5NDA'
+  }, {
+    label: 'Discord',
+    url: 'https://discord.gg/hQ2AySW'
+  }, {
+    label: 'Spectrum',
+    url: 'https://spectrum.chat/devnursery'
+  }];
+  return React.createElement(React.Fragment, null, React.createElement(_navi.Navi, {
+    menu: menu
+  }), React.createElement(_title.Title, null), React.createElement(_row.Row, {
+    theClass: 'paragraph'
+  }, React.createElement("p", null, "Alex Merced is a developer with a focus on full stack web development with a focus on ", React.createElement("span", null, "React, Typescript, GraphQL, Apollo, Svelte, and StencilJS."))));
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31774,7 +31877,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41075" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
