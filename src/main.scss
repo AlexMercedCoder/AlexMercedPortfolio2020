@@ -63,6 +63,44 @@ $yellow: #ffde22;
 
 }
 
+@media only screen and (max-width: 600px) {
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+    
+        div {
+            padding: 10px;
+            margin: 6px;
+            background-color: $yellow;
+            width: 90px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color .3s, color .3s;
+    
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        
+            &:hover, a:hover{
+                color: $yellow;
+                background-color: black;
+            }
+        }
+    
+        
+    }
+
+  }
+
 .row {
     display: flex;
     width: 90%;
@@ -74,7 +112,24 @@ $yellow: #ffde22;
 .paragraph {
     p {
         font-family: 'IBM Plex Serif', serif;
-        font-size: 3em;
+        font-size: 2em;
+        text-align: center;
+        background-color: coral;
+        padding: 15px;
+        border-radius: 6px;
+        color: white;
+        
+        span {
+            color: black
+        }
+    }
+
+}
+
+.paragraph2 {
+    p {
+        font-family: 'IBM Plex Serif', serif;
+        font-size: 1em;
         text-align: center;
         background-color: coral;
         padding: 15px;
@@ -95,7 +150,7 @@ $yellow: #ffde22;
     padding: 20px;
     background-color: silver;
     height: 400px;
-    width: 350px;
+    width: 330px;
     font-family: 'IBM Plex Serif', serif;
     text-align: center;
 

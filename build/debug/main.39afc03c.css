@@ -49,6 +49,36 @@
   text-decoration: underline #ff414e;
 }
 
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+  }
+  .navigation div {
+    padding: 10px;
+    margin: 6px;
+    background-color: #ffde22;
+    width: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .navigation div a {
+    color: black;
+    text-decoration: none;
+  }
+  .navigation div:hover, .navigation div a:hover {
+    color: #ffde22;
+    background-color: black;
+  }
+}
 .row {
   display: flex;
   width: 90%;
@@ -59,7 +89,7 @@
 
 .paragraph p {
   font-family: "IBM Plex Serif", serif;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   background-color: coral;
   padding: 15px;
@@ -70,6 +100,19 @@
   color: black;
 }
 
+.paragraph2 p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1em;
+  text-align: center;
+  background-color: coral;
+  padding: 15px;
+  border-radius: 6px;
+  color: white;
+}
+.paragraph2 p span {
+  color: black;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -77,7 +120,7 @@
   padding: 20px;
   background-color: silver;
   height: 400px;
-  width: 350px;
+  width: 330px;
   font-family: "IBM Plex Serif", serif;
   text-align: center;
 }

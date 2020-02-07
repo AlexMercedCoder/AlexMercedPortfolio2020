@@ -31976,7 +31976,7 @@ var App = function App() {
   }, React.createElement("h3", null, "Portfolio Page")), React.createElement("a", {
     href: "https://sites.google.com/view/ambootcampprojects/home"
   }, React.createElement("h3", null, "Bootcamp Project Gallery")))), React.createElement(_row.Row, {
-    theClass: 'paragraph'
+    theClass: 'paragraph2'
   }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")), React.createElement(_row.Row, null, _data.projects.map(function (proj) {
     return React.createElement(_smallcard.SmallCard, {
       theClass: "project"
@@ -32019,7 +32019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41075" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38469" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

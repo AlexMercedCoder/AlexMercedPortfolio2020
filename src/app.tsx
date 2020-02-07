@@ -50,7 +50,7 @@ const App:React.FC = () => {
 
 
 
-        <Row theClass='paragraph'>
+        <Row theClass='paragraph2'>
             <p>Below are some of Alex Merceds projects, to contact Alex email <span>Alex@AlexMerced.dev</span>.</p>
         </Row>
 
