@@ -31801,7 +31801,115 @@ var Row = function Row(props) {
 };
 
 exports.Row = Row;
-},{"react":"../node_modules/react/index.js"}],"app.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/bigcard.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.BigCard = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+var BigCard = function BigCard(props) {
+  return React.createElement("div", {
+    className: "card " + props.theClass
+  }, props.children);
+};
+
+exports.BigCard = BigCard;
+},{"react":"../node_modules/react/index.js"}],"data.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.projects = exports.menu = void 0;
+var menu = [{
+  label: 'Youtube',
+  url: 'https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ'
+}, {
+  label: 'GitHub',
+  url: 'https://github.com/alexmercedcoder'
+}, {
+  label: 'LinkedIn',
+  url: 'http://www.linkedin.com/in/alexmerced'
+}, {
+  label: 'Podcast',
+  url: 'https://open.spotify.com/show/1kMcquypdIElTu4Nu98XPM'
+}, {
+  label: 'Slack',
+  url: 'https://join.slack.com/t/amwebdev/shared_invite/enQtNzc4NDA3MDU3MDE0LTZjNjIyZmQ3MzA5Y2Q3MWUwZjk3NTIyYjliOThlMWFjNTFkYWM1OGUxN2Y3NGExNGVhOGIzZTg0YTJjZTk5NDA'
+}, {
+  label: 'Discord',
+  url: 'https://discord.gg/hQ2AySW'
+}, {
+  label: 'Spectrum',
+  url: 'https://spectrum.chat/devnursery'
+}];
+exports.menu = menu;
+var projects = [{
+  image: 'https://i.imgur.com/vWCc9ot.png',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}, {
+  image: 'https://i.imgur.com/sRcGAXe.png',
+  github: 'https://github.com/AlexMercedCoder/SavvyBackendAPI',
+  live: 'https://savvyhotspots.netlify.com/',
+  title: 'Savvy Hotspots'
+}, {
+  image: 'https://i.imgur.com/MLcgfsf.png',
+  github: 'https://github.com/Jordan-Morales/betterboxd',
+  live: 'https://betterboxd.herokuapp.com/',
+  title: 'BetterBoxD'
+}, {
+  image: 'http://alexmercedcoder.com/evevol.png',
+  github: 'https://github.com/AlexMercedCoder/Unit2EveVol',
+  live: 'https://shrouded-beach-63520.herokuapp.com/',
+  title: 'EveVol - Event/Volunteers'
+}, {
+  image: 'https://i.imgur.com/vWCc9ot.png',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}, {
+  image: 'http://alexmercedcoder.com/amblog.png',
+  github: 'https://github.com/AlexMercedCoder/AlexMercedExpressBlog',
+  live: 'https://fierce-waters-95519.herokuapp.com/index',
+  title: 'Full Stack Blog'
+}, {
+  image: 'http://alexmercedcoder.com/pet.jpg',
+  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
+  live: 'https://alexmercedcoder.github.io/petadoptionapp/',
+  title: 'Pet Adoption App'
+}, {
+  image: 'http://alexmercedcoder.com/pet.jpg',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}, {
+  image: 'https://i.imgur.com/vWCc9ot.png',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}, {
+  image: 'https://i.imgur.com/vWCc9ot.png',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}, {
+  image: 'https://i.imgur.com/vWCc9ot.png',
+  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
+  live: 'https://main.devnursery.com/',
+  title: 'devNursery'
+}];
+exports.projects = projects;
+},{}],"app.tsx":[function(require,module,exports) {
 "use strict";
 
 var React = _interopRequireWildcard(require("react"));
@@ -31814,42 +31922,38 @@ var _title = require("./components/title");
 
 var _row = require("./components/row");
 
+var _bigcard = require("./components/bigcard");
+
+var _data = require("./data");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var App = function App() {
-  var menu = [{
-    label: 'Youtube',
-    url: 'https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ'
-  }, {
-    label: 'GitHub',
-    url: 'https://github.com/alexmercedcoder'
-  }, {
-    label: 'LinkedIn',
-    url: 'http://www.linkedin.com/in/alexmerced'
-  }, {
-    label: 'Podcast',
-    url: 'https://open.spotify.com/show/1kMcquypdIElTu4Nu98XPM'
-  }, {
-    label: 'Slack',
-    url: 'https://join.slack.com/t/amwebdev/shared_invite/enQtNzc4NDA3MDU3MDE0LTZjNjIyZmQ3MzA5Y2Q3MWUwZjk3NTIyYjliOThlMWFjNTFkYWM1OGUxN2Y3NGExNGVhOGIzZTg0YTJjZTk5NDA'
-  }, {
-    label: 'Discord',
-    url: 'https://discord.gg/hQ2AySW'
-  }, {
-    label: 'Spectrum',
-    url: 'https://spectrum.chat/devnursery'
-  }];
   return React.createElement(React.Fragment, null, React.createElement(_navi.Navi, {
-    menu: menu
+    menu: _data.menu
   }), React.createElement(_title.Title, null), React.createElement(_row.Row, {
     theClass: 'paragraph'
-  }, React.createElement("p", null, "Alex Merced is a developer with a focus on full stack web development with a focus on ", React.createElement("span", null, "React, Typescript, GraphQL, Apollo, Svelte, and StencilJS."))));
+  }, React.createElement("p", null, "Alex Merced is a developer with a focus on full stack web development with a focus on ", React.createElement("span", null, "React, Typescript, GraphQL, Apollo, Svelte, and StencilJS."))), React.createElement(_row.Row, null, React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Current Projects"), React.createElement("h3", null, "Developer for Crossfield Digital"), React.createElement("h3", null, "Instructor Lead for General Assembly")), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Blogs"), React.createElement("a", {
+    href: "https://wp.workspace1985.xyz/"
+  }, React.createElement("h3", null, "Wordpress")), React.createElement("a", {
+    href: "https://medium.com/@alexmercedcoder"
+  }, React.createElement("h3", null, "Medium")), React.createElement("a", {
+    href: "https://dev.to/alexmercedcoder"
+  }, React.createElement("h3", null, "Dev.to"))), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Work Examples"), React.createElement("a", {
+    href: "http://www.devNursery.com"
+  }, React.createElement("h3", null, "DevNursery.com")), React.createElement("a", {
+    href: "https://dev.alexmercedcoder.work/"
+  }, React.createElement("h3", null, "Portfolio Page")), React.createElement("a", {
+    href: "https://sites.google.com/view/ambootcampprojects/home"
+  }, React.createElement("h3", null, "Bootcamp Project Gallery")))), React.createElement(_row.Row, {
+    theClass: 'paragraph'
+  }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")));
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./data":"data.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

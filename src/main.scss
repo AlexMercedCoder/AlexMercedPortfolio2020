@@ -87,3 +87,30 @@ $yellow: #ffde22;
     }
 
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: silver;
+    height: 400px;
+    width: 350px;
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+
+    h2 {
+        background-color: coral;
+        padding: 5px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            color: #ff414e;
+
+        }
+    }
+}
