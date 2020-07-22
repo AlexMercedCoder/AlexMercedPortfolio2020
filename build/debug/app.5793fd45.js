@@ -9992,7 +9992,7 @@ if ("development" !== "production") {
       }
 
       var eventName = 'on' + eventNameSuffix;
-      var isSupported = eventName in document;
+      var isSupported = (eventName in document);
 
       if (!isSupported) {
         var element = document.createElement('div');
@@ -31851,88 +31851,83 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.projects = exports.menu = void 0;
 var menu = [{
-  label: 'Youtube',
-  url: 'https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ'
+  label: "Youtube",
+  url: "https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ"
 }, {
-  label: 'GitHub',
-  url: 'https://github.com/alexmercedcoder'
+  label: "GitHub",
+  url: "https://github.com/alexmercedcoder"
 }, {
-  label: 'LinkedIn',
-  url: 'http://www.linkedin.com/in/alexmerced'
+  label: "LinkedIn",
+  url: "http://www.linkedin.com/in/alexmerced"
 }, {
-  label: 'Podcast',
-  url: 'https://open.spotify.com/show/1kMcquypdIElTu4Nu98XPM'
+  label: "Podcast",
+  url: "https://open.spotify.com/show/1kMcquypdIElTu4Nu98XPM"
 }, {
-  label: 'Slack',
-  url: 'https://join.slack.com/t/amwebdev/shared_invite/enQtNzc4NDA3MDU3MDE0LTZjNjIyZmQ3MzA5Y2Q3MWUwZjk3NTIyYjliOThlMWFjNTFkYWM1OGUxN2Y3NGExNGVhOGIzZTg0YTJjZTk5NDA'
+  label: "Slack",
+  url: "https://join.slack.com/t/amwebdev/shared_invite/enQtNzc4NDA3MDU3MDE0LTZjNjIyZmQ3MzA5Y2Q3MWUwZjk3NTIyYjliOThlMWFjNTFkYWM1OGUxN2Y3NGExNGVhOGIzZTg0YTJjZTk5NDA"
 }, {
-  label: 'Discord',
-  url: 'https://discord.gg/hQ2AySW'
+  label: "Discord",
+  url: "https://discord.gg/hkdrPwX"
 }, {
-  label: 'Spectrum',
-  url: 'https://spectrum.chat/devnursery'
+  label: "Spectrum",
+  url: "https://spectrum.chat/devnursery"
 }];
 exports.menu = menu;
 var projects = [{
-  image: 'https://i.imgur.com/vWCc9ot.png',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: "https://i.imgur.com/vWCc9ot.png",
+  github: "https://github.com/AlexMercedCoder/devNurserySvelteBlogApp",
+  live: "https://main.devnursery.com/",
+  title: "devNursery"
 }, {
-  image: 'https://i.imgur.com/sRcGAXe.png',
-  github: 'https://github.com/AlexMercedCoder/SavvyBackendAPI',
-  live: 'https://savvyhotspots.netlify.com/',
-  title: 'Savvy Hotspots'
+  image: "https://i.imgur.com/sRcGAXe.png",
+  github: "https://github.com/AlexMercedCoder/SavvyBackendAPI",
+  live: "https://savvyhotspots.netlify.com/",
+  title: "Savvy Hotspots"
 }, {
-  image: 'https://i.imgur.com/MLcgfsf.png',
-  github: 'https://github.com/Jordan-Morales/betterboxd',
-  live: 'https://betterboxd.herokuapp.com/',
-  title: 'BetterBoxD'
+  image: "https://i.imgur.com/MLcgfsf.png",
+  github: "https://github.com/Jordan-Morales/betterboxd",
+  live: "https://betterboxd.herokuapp.com/",
+  title: "BetterBoxD"
 }, {
-  image: 'http://alexmercedcoder.com/evevol.png',
-  github: 'https://github.com/AlexMercedCoder/Unit2EveVol',
-  live: 'https://shrouded-beach-63520.herokuapp.com/',
-  title: 'EveVol - Event/Volunteers'
+  image: "http://alexmercedcoder.com/evevol.png",
+  github: "https://github.com/AlexMercedCoder/Unit2EveVol",
+  live: "https://shrouded-beach-63520.herokuapp.com/",
+  title: "EveVol - Event/Volunteers"
 }, {
-  image: 'https://i.imgur.com/vWCc9ot.png',
-  github: 'https://github.com/AlexMercedCoder/devNurserySvelteBlogApp',
-  live: 'https://main.devnursery.com/',
-  title: 'devNursery'
+  image: "http://alexmercedcoder.com/amblog.png",
+  github: "https://github.com/AlexMercedCoder/AlexMercedExpressBlog",
+  live: "https://fierce-waters-95519.herokuapp.com/index",
+  title: "Full Stack Blog"
 }, {
-  image: 'http://alexmercedcoder.com/amblog.png',
-  github: 'https://github.com/AlexMercedCoder/AlexMercedExpressBlog',
-  live: 'https://fierce-waters-95519.herokuapp.com/index',
-  title: 'Full Stack Blog'
+  image: "http://alexmercedcoder.com/pet.jpg",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://alexmercedcoder.github.io/petadoptionapp/",
+  title: "Pet Adoption App"
 }, {
-  image: 'http://alexmercedcoder.com/pet.jpg',
-  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  live: 'https://alexmercedcoder.github.io/petadoptionapp/',
-  title: 'Pet Adoption App'
+  image: "http://alexmercedcoder.com/calc.png",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://optimistic-lamarr-1dc751.netlify.com/",
+  title: "Calculator"
 }, {
-  image: 'http://alexmercedcoder.com/calc.png',
-  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  live: 'https://optimistic-lamarr-1dc751.netlify.com/',
-  title: 'Calculator'
+  image: "http://alexmercedcoder.com/todo.png",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://xenodochial-beaver-d27eca.netlify.com/",
+  title: "Todo Lists"
 }, {
-  image: 'http://alexmercedcoder.com/todo.png',
-  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  live: 'https://xenodochial-beaver-d27eca.netlify.com/',
-  title: 'Todo Lists'
+  image: "http://alexmercedcoder.com/bill.jpg",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://stoic-stonebraker-80dd15.netlify.com/",
+  title: "Bill & Ted TicTacToe"
 }, {
-  image: 'http://alexmercedcoder.com/bill.jpg',
-  github: 'https://stoic-stonebraker-80dd15.netlify.com/',
-  live: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  title: 'Bill & Ted TicTacToe'
+  image: "http://alexmercedcoder.com/space.jpg",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://dazzling-einstein-0e4817.netlify.com/",
+  title: "Space Battle"
 }, {
-  image: 'http://alexmercedcoder.com/space.jpg',
-  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  live: 'https://dazzling-einstein-0e4817.netlify.com/',
-  title: 'Space Battle'
-}, {
-  image: 'http://alexmercedcoder.com/grave.jpg',
-  github: 'https://github.com/AlexMercedCoder/GABootcampProjects',
-  live: 'https://vibrant-franklin-2cd867.netlify.com/',
-  title: 'Graveyard Landscaper'
+  image: "http://alexmercedcoder.com/grave.jpg",
+  github: "https://github.com/AlexMercedCoder/GABootcampProjects",
+  live: "https://vibrant-franklin-2cd867.netlify.com/",
+  title: "Graveyard Landscaper"
 }];
 exports.projects = projects;
 },{}],"app.tsx":[function(require,module,exports) {
@@ -31991,7 +31986,7 @@ var App = function App() {
 };
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./components/smallcard":"components/smallcard.tsx","./data":"data.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./components/smallcard":"components/smallcard.tsx","./data":"data.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -32019,7 +32014,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38469" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37027" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -32195,5 +32190,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.tsx"], null)
+},{}]},{},["../node_modules/parcel/src/builtins/hmr-runtime.js","app.tsx"], null)
 //# sourceMappingURL=/app.5793fd45.js.map
