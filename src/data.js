@@ -29,8 +29,8 @@ export const menu = [
     url: "https://discord.gg/hkdrPwX",
   },
   {
-    label: "Spectrum",
-    url: "https://spectrum.chat/devnursery",
+    label: "JSLibraries",
+    url: "https://www.alexmercedcoder.com/jslib/",
   },
 ];
 
