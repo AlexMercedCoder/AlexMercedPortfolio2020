@@ -1,5 +1,9 @@
 export const menu = [
   {
+    label: "Consulting",
+    url: "https://consulting.alexmercedcoder.com",
+  },
+  {
     label: "Youtube",
     url: "https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ",
   },
