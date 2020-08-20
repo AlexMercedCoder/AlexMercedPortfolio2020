@@ -49,36 +49,6 @@
   text-decoration: underline #ff414e;
 }
 
-@media only screen and (max-width: 600px) {
-  .navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: scroll;
-    flex-wrap: nowrap;
-    width: 90%;
-    margin: auto;
-    font-family: "Raleway", sans-serif;
-  }
-  .navigation div {
-    padding: 10px;
-    margin: 6px;
-    background-color: #ffde22;
-    width: 90px;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .navigation div a {
-    color: black;
-    text-decoration: none;
-  }
-  .navigation div:hover, .navigation div a:hover {
-    color: #ffde22;
-    background-color: black;
-  }
-}
 .row {
   display: flex;
   width: 90%;
@@ -188,6 +158,44 @@
 .project footer div a:hover {
   background-color: #ff414e;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: scroll;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+  }
+  .navigation div {
+    padding: 10px;
+    margin: 6px;
+    background-color: #ffde22;
+    width: 90px;
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .navigation div a {
+    color: black;
+    text-decoration: none;
+  }
+  .navigation div:hover, .navigation div a:hover {
+    color: #ffde22;
+    background-color: black;
+  }
+
+  .card {
+    height: 300px;
+    margin: 15px auto;
+  }
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

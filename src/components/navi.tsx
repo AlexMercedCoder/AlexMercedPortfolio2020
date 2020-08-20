@@ -9,8 +9,8 @@ export const Navi:React.FC<NaviProps> = props => {
 
     return (
         <div className="navigation">
-        {props.menu.map(item => (
-            <div key={item.url}>
+        {props.menu.map((item, index) => (
+            <div key={index}>
                 <a href={item.url}>{item.label}</a>
             </div>
         ))}

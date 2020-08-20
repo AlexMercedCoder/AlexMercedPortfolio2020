@@ -31747,9 +31747,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var Navi = function Navi(props) {
   return React.createElement("div", {
     className: "navigation"
-  }, props.menu.map(function (item) {
+  }, props.menu.map(function (item, index) {
     return React.createElement("div", {
-      key: item.url
+      key: index
     }, React.createElement("a", {
       href: item.url
     }, item.label));
@@ -31851,8 +31851,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.projects = exports.menu = void 0;
 var menu = [{
-  label: "Youtube",
-  url: "https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ"
+  label: "Consulting",
+  url: "https://consulting.alexmercedcoder.com"
+}, {
+  label: "Tutorials",
+  url: "https://main.devnursery.com"
 }, {
   label: "GitHub",
   url: "https://github.com/alexmercedcoder"
@@ -31869,8 +31872,8 @@ var menu = [{
   label: "Discord",
   url: "https://discord.gg/hkdrPwX"
 }, {
-  label: "Spectrum",
-  url: "https://spectrum.chat/devnursery"
+  label: "JSLibraries",
+  url: "https://www.alexmercedcoder.com/jslib/"
 }];
 exports.menu = menu;
 var projects = [{
@@ -32014,7 +32017,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45673" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40745" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

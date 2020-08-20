@@ -4,8 +4,8 @@ export const menu = [
     url: "https://consulting.alexmercedcoder.com",
   },
   {
-    label: "Youtube",
-    url: "https://www.youtube.com/channel/UCoc4UCEetAt3htM3hV1dQgQ",
+    label: "Tutorials",
+    url: "https://main.devnursery.com",
   },
   {
     label: "GitHub",
