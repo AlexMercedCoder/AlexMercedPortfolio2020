@@ -30,7 +30,7 @@ export const menu = [
   },
   {
     label: "JSLibraries",
-    url: "https://www.alexmercedcoder.com/jslib/",
+    url: "http://lib.alexmercedcoder.com/",
   },
 ];
 

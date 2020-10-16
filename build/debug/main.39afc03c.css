@@ -8,7 +8,11 @@
   margin: auto;
   font-family: "Raleway", sans-serif;
 }
-.navigation div {
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+.navigation a div {
   padding: 10px;
   margin: 6px;
   background-color: #ffde22;
@@ -18,11 +22,7 @@
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
-.navigation div a {
-  color: black;
-  text-decoration: none;
-}
-.navigation div:hover, .navigation div a:hover {
+.navigation a:hover, .navigation a div:hover {
   color: #ffde22;
   background-color: black;
 }
@@ -172,24 +172,25 @@
     margin: auto;
     font-family: "Raleway", sans-serif;
   }
-  .navigation div {
+  .navigation a {
+    color: black;
+    text-decoration: none;
+  }
+  .navigation a:hover, .navigation a div:hover {
+    color: #ffde22;
+    background-color: black;
+  }
+  .navigation a div {
     padding: 10px;
     margin: 6px;
     background-color: #ffde22;
     width: 90px;
+    text-decoration: none;
     text-align: center;
     font-size: 0.8em;
     text-transform: uppercase;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-  }
-  .navigation div a {
-    color: black;
-    text-decoration: none;
-  }
-  .navigation div:hover, .navigation div a:hover {
-    color: #ffde22;
-    background-color: black;
   }
 
   .card {

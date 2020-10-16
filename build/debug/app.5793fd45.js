@@ -31748,11 +31748,10 @@ var Navi = function Navi(props) {
   return React.createElement("div", {
     className: "navigation"
   }, props.menu.map(function (item, index) {
-    return React.createElement("div", {
+    return React.createElement("a", {
+      href: item.url,
       key: index
-    }, React.createElement("a", {
-      href: item.url
-    }, item.label));
+    }, React.createElement("div", null, item.label));
   }));
 };
 
@@ -31873,7 +31872,7 @@ var menu = [{
   url: "https://discord.gg/hkdrPwX"
 }, {
   label: "JSLibraries",
-  url: "https://www.alexmercedcoder.com/jslib/"
+  url: "http://lib.alexmercedcoder.com/"
 }];
 exports.menu = menu;
 var projects = [{
@@ -31960,24 +31959,27 @@ var App = function App() {
   return React.createElement(React.Fragment, null, React.createElement(_navi.Navi, {
     menu: _data.menu
   }), React.createElement(_title.Title, null), React.createElement(_row.Row, {
-    theClass: 'paragraph'
-  }, React.createElement("p", null, "Alex Merced is a developer with a focus on full stack web development with a focus on ", React.createElement("span", null, "React, Typescript, GraphQL, Apollo, Svelte, and StencilJS."))), React.createElement(_row.Row, null, React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Current Projects"), React.createElement("h3", null, "Developer for Crossfield Digital"), React.createElement("h3", null, "Instructor Lead for General Assembly")), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Blogs"), React.createElement("a", {
-    href: "https://wp.workspace1985.xyz/"
-  }, React.createElement("h3", null, "Wordpress")), React.createElement("a", {
-    href: "https://medium.com/@alexmercedcoder"
-  }, React.createElement("h3", null, "Medium")), React.createElement("a", {
+    theClass: "paragraph"
+  }, React.createElement("p", null, "Alex Merced is a developer with a focus on full stack web development with a focus on", " ", React.createElement("span", null, "React, Typescript, GraphQL, Apollo, Svelte, and StencilJS."), " ", "Below you can find some sample projects in the menu above you can find my youtube/podcast, javascript libraries I've created and more.")), React.createElement(_row.Row, null, React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Current Projects"), React.createElement("h3", null, "Developer for Crossfield Digital"), React.createElement("h3", null, "Instructor Lead for General Assembly")), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Media"), React.createElement("a", {
+    href: "https://twitter.com/alexmercedcoder"
+  }, React.createElement("h3", null, "Twitter")), React.createElement("a", {
     href: "https://dev.to/alexmercedcoder"
-  }, React.createElement("h3", null, "Dev.to"))), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Work Examples"), React.createElement("a", {
+  }, React.createElement("h3", null, "Dev.to Blog")), React.createElement("a", {
+    href: "https://instagram.com/alexmercedcoder"
+  }, React.createElement("h3", null, "Instagram"))), React.createElement(_bigcard.BigCard, null, React.createElement("h2", null, "Work Examples"), React.createElement("a", {
     href: "http://www.devNursery.com"
   }, React.createElement("h3", null, "DevNursery.com")), React.createElement("a", {
     href: "https://dev.alexmercedcoder.work/"
   }, React.createElement("h3", null, "Portfolio Page")), React.createElement("a", {
     href: "https://sites.google.com/view/ambootcampprojects/home"
-  }, React.createElement("h3", null, "Bootcamp Project Gallery")))), React.createElement(_row.Row, {
-    theClass: 'paragraph2'
-  }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")), React.createElement(_row.Row, null, _data.projects.map(function (proj) {
+  }, React.createElement("h3", null, "Bootcamp Project Gallery")), React.createElement("a", {
+    href: "http://lib.alexmercedcoder.com/"
+  }, React.createElement("h3", null, "JS Libraries I Created")))), React.createElement(_row.Row, {
+    theClass: "paragraph2"
+  }, React.createElement("p", null, "Below are some of Alex Merceds projects, to contact Alex email", " ", React.createElement("span", null, "Alex@AlexMerced.dev"), ".")), React.createElement(_row.Row, null, _data.projects.map(function (proj, index) {
     return React.createElement(_smallcard.SmallCard, {
-      theClass: "project"
+      theClass: "project",
+      key: index
     }, React.createElement("header", null, React.createElement("img", {
       src: proj.image
     })), React.createElement("div", null, proj.title), React.createElement("footer", null, React.createElement("div", null, React.createElement("a", {
@@ -31988,7 +31990,7 @@ var App = function App() {
   })));
 };
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
+ReactDOM.render(React.createElement(App, null), document.getElementById("app"));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/navi":"components/navi.tsx","./components/title":"components/title.tsx","./components/row":"components/row.tsx","./components/bigcard":"components/bigcard.tsx","./components/smallcard":"components/smallcard.tsx","./data":"data.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -32017,7 +32019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40745" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39141" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
