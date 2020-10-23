@@ -32,6 +32,10 @@ export const menu = [
     label: "JSLibraries",
     url: "http://lib.alexmercedcoder.com/",
   },
+  {
+    label: "Patreon",
+    url: "https://www.patreon.com/alexmercedcoder",
+  },
 ];
 
 export const projects = [
